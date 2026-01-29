@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug OpenGL App",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/app",
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "MIMode": "gdb",
+      "externalConsole": false,
+      "preLaunchTask": "Build (CMake Debug)"
+    }
+  ]
+}
