@@ -1,7 +1,7 @@
 CMakeFiles/app.dir/src/gfx/Shader.cpp.o: \
- /home/padell/Escritorio/OpenGL_Template/src/gfx/Shader.cpp \
+ /home/pars/Desktop/OpenGL_Template/src/gfx/Shader.cpp \
  /usr/include/stdc-predef.h \
- /home/padell/Escritorio/OpenGL_Template/src/gfx/Shader.h \
+ /home/pars/Desktop/OpenGL_Template/src/gfx/Shader.h \
  /usr/include/c++/12/string \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -116,8 +116,8 @@ CMakeFiles/app.dir/src/gfx/Shader.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
  /usr/include/c++/12/bits/basic_string.tcc \
- /home/padell/Escritorio/OpenGL_Template/external/glad/include/glad/glad.h \
- /home/padell/Escritorio/OpenGL_Template/external/glad/include/KHR/khrplatform.h \
+ /home/pars/Desktop/OpenGL_Template/external/glad/include/glad/glad.h \
+ /home/pars/Desktop/OpenGL_Template/external/glad/include/KHR/khrplatform.h \
  /usr/include/c++/12/fstream /usr/include/c++/12/istream \
  /usr/include/c++/12/ios /usr/include/c++/12/exception \
  /usr/include/c++/12/bits/exception_ptr.h \

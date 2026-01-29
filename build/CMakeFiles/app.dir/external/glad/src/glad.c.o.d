@@ -1,5 +1,5 @@
 CMakeFiles/app.dir/external/glad/src/glad.c.o: \
- /home/padell/Escritorio/OpenGL_Template/external/glad/src/glad.c \
+ /home/pars/Desktop/OpenGL_Template/external/glad/src/glad.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -51,8 +51,8 @@ CMakeFiles/app.dir/external/glad/src/glad.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/padell/Escritorio/OpenGL_Template/external/glad/include/glad/glad.h \
- /home/padell/Escritorio/OpenGL_Template/external/glad/include/KHR/khrplatform.h \
+ /home/pars/Desktop/OpenGL_Template/external/glad/include/glad/glad.h \
+ /home/pars/Desktop/OpenGL_Template/external/glad/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/dlfcn.h \

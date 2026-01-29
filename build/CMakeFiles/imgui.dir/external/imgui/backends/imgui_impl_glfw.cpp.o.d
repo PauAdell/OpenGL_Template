@@ -1,8 +1,8 @@
 CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: \
- /home/padell/Escritorio/OpenGL_Template/external/imgui/backends/imgui_impl_glfw.cpp \
+ /home/pars/Desktop/OpenGL_Template/external/imgui/backends/imgui_impl_glfw.cpp \
  /usr/include/stdc-predef.h \
- /home/padell/Escritorio/OpenGL_Template/external/imgui/imgui.h \
- /home/padell/Escritorio/OpenGL_Template/external/imgui/imconfig.h \
+ /home/pars/Desktop/OpenGL_Template/external/imgui/imgui.h \
+ /home/pars/Desktop/OpenGL_Template/external/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h /usr/include/string.h \
@@ -17,7 +17,7 @@ CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/padell/Escritorio/OpenGL_Template/external/imgui/backends/imgui_impl_glfw.h \
+ /home/pars/Desktop/OpenGL_Template/external/imgui/backends/imgui_impl_glfw.h \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \

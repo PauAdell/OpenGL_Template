@@ -8,17 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/padell/Escritorio/OpenGL_Template/external/glad/src/glad.c" "CMakeFiles/app.dir/external/glad/src/glad.c.o" "gcc" "CMakeFiles/app.dir/external/glad/src/glad.c.o.d"
-  "/home/padell/Escritorio/OpenGL_Template/src/gfx/Shader.cpp" "CMakeFiles/app.dir/src/gfx/Shader.cpp.o" "gcc" "CMakeFiles/app.dir/src/gfx/Shader.cpp.o.d"
-  "/home/padell/Escritorio/OpenGL_Template/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
+  "/home/pars/Desktop/OpenGL_Template/external/glad/src/glad.c" "CMakeFiles/app.dir/external/glad/src/glad.c.o" "gcc" "CMakeFiles/app.dir/external/glad/src/glad.c.o.d"
+  "/home/pars/Desktop/OpenGL_Template/src/gfx/Shader.cpp" "CMakeFiles/app.dir/src/gfx/Shader.cpp.o" "gcc" "CMakeFiles/app.dir/src/gfx/Shader.cpp.o.d"
+  "/home/pars/Desktop/OpenGL_Template/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/pars/Desktop/OpenGL_Template/build/CMakeFiles/imgui.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

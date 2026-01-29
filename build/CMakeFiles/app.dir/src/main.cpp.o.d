@@ -1,5 +1,5 @@
 CMakeFiles/app.dir/src/main.cpp.o: \
- /home/padell/Escritorio/OpenGL_Template/src/main.cpp \
+ /home/pars/Desktop/OpenGL_Template/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -148,13 +148,13 @@ CMakeFiles/app.dir/src/main.cpp.o: \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
- /home/padell/Escritorio/OpenGL_Template/external/glad/include/glad/glad.h \
- /home/padell/Escritorio/OpenGL_Template/external/glad/include/KHR/khrplatform.h \
+ /home/pars/Desktop/OpenGL_Template/external/glad/include/glad/glad.h \
+ /home/pars/Desktop/OpenGL_Template/external/glad/include/KHR/khrplatform.h \
  /usr/include/GLFW/glfw3.h \
- /home/padell/Escritorio/OpenGL_Template/src/gfx/Shader.h \
- /home/padell/Escritorio/OpenGL_Template/external/imgui/imgui.h \
- /home/padell/Escritorio/OpenGL_Template/external/imgui/imconfig.h \
+ /home/pars/Desktop/OpenGL_Template/src/gfx/Shader.h \
+ /home/pars/Desktop/OpenGL_Template/external/imgui/imgui.h \
+ /home/pars/Desktop/OpenGL_Template/external/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/12/include/float.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/assert.h \
- /home/padell/Escritorio/OpenGL_Template/external/imgui/backends/imgui_impl_glfw.h \
- /home/padell/Escritorio/OpenGL_Template/external/imgui/backends/imgui_impl_opengl3.h
+ /home/pars/Desktop/OpenGL_Template/external/imgui/backends/imgui_impl_glfw.h \
+ /home/pars/Desktop/OpenGL_Template/external/imgui/backends/imgui_impl_opengl3.h
