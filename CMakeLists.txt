@@ -22,7 +22,7 @@ add_library(imgui STATIC
     external/imgui/imgui_tables.cpp
     external/imgui/imgui_widgets.cpp
     # optional:
-    # external/imgui/imgui_demo.cpp
+    external/imgui/imgui_demo.cpp
 
     external/imgui/backends/imgui_impl_glfw.cpp
     external/imgui/backends/imgui_impl_opengl3.cpp
@@ -42,7 +42,12 @@ target_link_libraries(imgui PUBLIC ${GLFW_LIBRARIES} OpenGL::GL)
 # -------------------------
 add_executable(app
     src/main.cpp
+
+    src/app/App.cpp
+    src/gfx/Renderer.cpp
     src/gfx/Shader.cpp
+    src/ui/ImGuiLayer.cpp
+
     external/glad/src/glad.c
 )
 
