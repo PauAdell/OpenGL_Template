@@ -8,9 +8,6 @@ public:
     App(int width, int height, const std::string& title);
     ~App();
 
-    App(const App&) = delete;
-    App& operator=(const App&) = delete;
-
     void run();
     void onResize(int width, int height);
 

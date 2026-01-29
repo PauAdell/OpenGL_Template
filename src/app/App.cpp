@@ -21,7 +21,6 @@ App::App(int width, int height, const std::string& title)
     createWindow(width, height, title);
 
     glfwMakeContextCurrent(m_window);
-    glfwSwapInterval(1);
 
     initGLAD();
 
