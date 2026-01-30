@@ -34,10 +34,10 @@ void ImGuiLayer::beginFrame() {
 void ImGuiLayer::drawMyDemo(RenderSettings& settings) {
     if (!m_initialized) return;
     // Tu ventana especializada (Panel)
-    ImGui::Begin("Basic UI to change color"); // título de ventana
+    ImGui::Begin("Basic UI"); // título de ventana
 
     ImGui::Text("Choose the color of the triangle:");
-    ImGui::ColorEdit4("Valor", glm::value_ptr(settings.triangleColor));
+    ImGui::ColorEdit4("Value", glm::value_ptr(settings.triangleColor));
     ImGui::End();
 }
 
