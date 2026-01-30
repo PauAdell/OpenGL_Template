@@ -1,6 +1,0 @@
-sudo apt update
-sudo apt install -y build-essential cmake gdb pkg-config \
-  libglfw3-dev libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev \
-  mesa-common-dev libgl1-mesa-dev
-
-add imgui to external: git clone https://github.com/ocornut/imgui.git
