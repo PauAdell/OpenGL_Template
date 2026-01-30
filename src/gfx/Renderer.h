@@ -1,6 +1,7 @@
 #pragma once
 #include <glad/glad.h>
 #include <memory>
+#include "../core/RenderSettings.h"
 
 class Shader;
 
@@ -10,11 +11,11 @@ public:
     ~Renderer();
 
     void init();
-    void render();
+    void render(const RenderSettings& renderSettings, float time);
     void shutdown();
 
 private:
-    GLuint m_vao = 0;
-    GLuint m_vbo = 0;
+    unsigned int m_vao = 0;
+    unsigned int m_vbo = 0;
     std::unique_ptr<Shader> m_shader;
 };

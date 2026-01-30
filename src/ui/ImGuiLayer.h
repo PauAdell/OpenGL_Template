@@ -1,4 +1,7 @@
 #pragma once
+
+#include "../core/RenderSettings.h"
+
 struct GLFWwindow;
 
 class ImGuiLayer {
@@ -7,6 +10,7 @@ public:
     void beginFrame();
     void endFrame();
     void drawDemo();
+    void drawMyDemo(RenderSettings& renderSettings);
     void shutdown();
 
 private:

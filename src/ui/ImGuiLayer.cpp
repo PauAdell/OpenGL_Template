@@ -6,6 +6,8 @@
 
 #define GLFW_INCLUDE_NONE
 #include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 void ImGuiLayer::init(GLFWwindow* window, const char* glslVersion) {
     IMGUI_CHECKVERSION();
@@ -15,7 +17,8 @@ void ImGuiLayer::init(GLFWwindow* window, const char* glslVersion) {
     io.IniFilename = "config/imgui.ini";
     ImGui::StyleColorsDark();
 
-    ImGui_ImplGlfw_InitForOpenGL(window, true);
+    // False to not install own callbacks
+    ImGui_ImplGlfw_InitForOpenGL(window, false);
     ImGui_ImplOpenGL3_Init(glslVersion);
 
     m_initialized = true;
@@ -26,6 +29,16 @@ void ImGuiLayer::beginFrame() {
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplGlfw_NewFrame();
     ImGui::NewFrame();
+}
+
+void ImGuiLayer::drawMyDemo(RenderSettings& settings) {
+    if (!m_initialized) return;
+    // Tu ventana especializada (Panel)
+    ImGui::Begin("Basic UI to change color"); // título de ventana
+
+    ImGui::Text("Choose the color of the triangle:");
+    ImGui::ColorEdit4("Valor", glm::value_ptr(settings.triangleColor));
+    ImGui::End();
 }
 
 void ImGuiLayer::drawDemo() {

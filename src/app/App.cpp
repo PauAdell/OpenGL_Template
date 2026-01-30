@@ -9,6 +9,7 @@
 
 #include "gfx/Renderer.h"
 #include "ui/ImGuiLayer.h"
+#include "core/Input.h"
 
 static void glfwErrorCallback(int error, const char* description) {
     std::cerr << "GLFW Error (" << error << "): " << description << "\n";
@@ -73,21 +74,28 @@ void App::run() {
     ImGuiLayer imgui;
     imgui.init(m_window, "#version 330 core");
 
-    while (!glfwWindowShouldClose(m_window)) {
+    Input::attach(m_window);
 
-        glClearColor(0.1f, 0.12f, 0.16f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+    while (!glfwWindowShouldClose(m_window)) {
+        float timeValue = static_cast<float>(glfwGetTime());
+
+        Input::newFrame();
+        glfwPollEvents(); // update input state
+
+        // Example: exit on Escape
+        if (Input::keyPressed(GLFW_KEY_ESCAPE)) {
+            glfwSetWindowShouldClose(m_window, true);
+        }
 
         // 1) draw your scene
-        renderer.render();
+        renderer.render(m_renderSettings, timeValue);
 
         // 2) draw UI last
         imgui.beginFrame();
-        imgui.drawDemo(); // or your own windows
+        imgui.drawMyDemo(m_renderSettings);
         imgui.endFrame();
 
         glfwSwapBuffers(m_window);
-        glfwPollEvents();
     }
 
     // Important: shutdown while context still exists
@@ -108,4 +116,9 @@ void App::onResize(int width, int height) {
 
     glViewport(0, 0, width, height);
     //m_renderer.onResize(width, height) // send info back to renderer
+}
+
+void App::processInput(GLFWwindow *window) {
+    if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, true);
 }

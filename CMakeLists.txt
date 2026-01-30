@@ -10,8 +10,8 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O2")
 
 find_package(PkgConfig REQUIRED)
 pkg_search_module(GLFW REQUIRED glfw3)
-
 find_package(OpenGL REQUIRED)
+find_package(glm REQUIRED)
 
 # -------------------------
 # ImGui (static library)
@@ -47,6 +47,7 @@ add_executable(app
     src/gfx/Renderer.cpp
     src/gfx/Shader.cpp
     src/ui/ImGuiLayer.cpp
+    src/core/Input.cpp
 
     external/glad/src/glad.c
 )
@@ -63,4 +64,5 @@ target_link_libraries(app PRIVATE
     OpenGL::GL
     dl
     pthread
+    glm::glm
 )

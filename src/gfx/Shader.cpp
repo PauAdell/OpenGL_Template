@@ -15,7 +15,7 @@ std::string Shader::readFile(const std::string& path) {
 }
 
 GLuint Shader::compileStage(GLenum type, const std::string& source, const std::string& debugName) {
-    GLuint shader = glCreateShader(type);
+    unsigned int shader = glCreateShader(type);
     const char* src = source.c_str();
     glShaderSource(shader, 1, &src, nullptr);
     glCompileShader(shader);
@@ -37,7 +37,7 @@ GLuint Shader::compileStage(GLenum type, const std::string& source, const std::s
     return shader;
 }
 
-void Shader::linkProgram(GLuint program, GLuint vs, GLuint fs) {
+void Shader::linkProgram(unsigned int program, unsigned int vs, unsigned int fs) {
     glAttachShader(program, vs);
     glAttachShader(program, fs);
     glLinkProgram(program);
@@ -59,20 +59,51 @@ Shader::Shader(const std::string& vertexPath, const std::string& fragmentPath) {
     std::string vsrc = readFile(vertexPath);
     std::string fsrc = readFile(fragmentPath);
 
-    GLuint vs = compileStage(GL_VERTEX_SHADER, vsrc, vertexPath);
-    GLuint fs = compileStage(GL_FRAGMENT_SHADER, fsrc, fragmentPath);
+    unsigned int vs = compileStage(GL_VERTEX_SHADER, vsrc, vertexPath);
+    unsigned int fs = compileStage(GL_FRAGMENT_SHADER, fsrc, fragmentPath);
 
-    m_program = glCreateProgram();
-    linkProgram(m_program, vs, fs);
+    ID = glCreateProgram();
+    linkProgram(ID, vs, fs);
 
     glDeleteShader(vs);
     glDeleteShader(fs);
 }
 
 Shader::~Shader() {
-    if (m_program) glDeleteProgram(m_program);
+    if (ID) glDeleteProgram(ID);
 }
 
 void Shader::use() const {
-    glUseProgram(m_program);
+    glUseProgram(ID);
+}
+
+void Shader::setBool(const std::string &name, bool value) const{
+    GLint loc = glGetUniformLocation(ID, name.c_str());
+    if (loc == -1) std::cerr << "Warning: uniform '" << name << "' not found/used in shader\n";
+    glUniform1i(loc, (int) value);
+}
+void Shader::setInt(const std::string &name, int value) const{
+    GLint loc = glGetUniformLocation(ID, name.c_str());
+    if (loc == -1) std::cerr << "Warning: uniform '" << name << "' not found/used in shader\n";
+    glUniform1i(loc, value);
+}
+void Shader::setFloat(const std::string &name, float value) const{
+    GLint loc = glGetUniformLocation(ID, name.c_str());
+    if (loc == -1) std::cerr << "Warning: uniform '" << name << "' not found/used in shader\n";
+    glUniform1f(loc, value);
+}
+void Shader::setVec3(const std::string &name, const glm::vec3& value) const{
+    GLint loc = glGetUniformLocation(ID, name.c_str());
+    if (loc == -1) std::cerr << "Warning: uniform '" << name << "' not found/used in shader\n";
+    glUniform3fv(loc, 1,  &value[0]);
+}
+void Shader::setVec4(const std::string &name, const glm::vec4& value) const{
+    GLint loc = glGetUniformLocation(ID, name.c_str());
+    if (loc == -1) std::cerr << "Warning: uniform '" << name << "' not found/used in shader\n";
+    glUniform4fv(loc, 1,  &value[0]);
+}
+void Shader::setMat4(const std::string &name, const glm::mat4& mat) const{
+    GLint loc = glGetUniformLocation(ID, name.c_str());
+    if (loc == -1) std::cerr << "Warning: uniform '" << name << "' not found/used in shader\n";
+    glUniformMatrix4fv(loc, 1, GL_FALSE,  &mat[0][0]);
 }
