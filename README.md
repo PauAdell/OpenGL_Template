@@ -4,7 +4,6 @@ This repository provides a minimal **OpenGL template** designed for learning, ex
 
 The goal is to give you a starting point where you can focus on learning graphics programming concepts without worrying about boilerplate setup. Don't panic if you don't understand some of the code. I'm no expert, I've tried to make it as simple as possible, while giving option to expand without it being too difficult.
 
----
 
 ## Preview
 
@@ -12,7 +11,6 @@ The goal is to give you a starting point where you can focus on learning graphic
 ![Preview](docs/TemplateScreenshot.png)
 
 
----
 
 ## Features
 
@@ -23,7 +21,6 @@ The goal is to give you a starting point where you can focus on learning graphic
 - Clean structure for easy extension
 - Easy debug system using VSCode (F5)
 
----
 
 ## Requirements
 
@@ -35,7 +32,6 @@ sudo apt install -y build-essential cmake gdb pkg-config \
   mesa-common-dev libgl1-mesa-dev
 ```
 
---- 
 
 This project expects ImGui to be located inside the external/ folder. To install:
 
@@ -65,7 +61,6 @@ To compile and run the project:
     ./build/app
 ```
 
-
 ## How to Use This Template
 
 You can modify this project to learn or experiment with:
@@ -82,6 +77,5 @@ The idea is simple:
 
 > Start from the working base and expand it step by step.
 
----
 
 Feel free to modify and expand this template to suit your learning goals.
